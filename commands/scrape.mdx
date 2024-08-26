@@ -1,0 +1,39 @@
+---
+title: 'scrape'
+description: 'Reference for the `scrape` command in Genie, the AI-powered CLI companion.'
+---
+
+The `scrape` command allows you to extract content from web pages by specifying HTML elements. This is useful for gathering data from websites, such as headings, paragraphs, or links, and saving the results to a file for further analysis.
+
+
+## Usage
+
+```bash
+genie scrape [flags]
+```
+
+## Flags
+
+`-e, --element string`: Specifies the HTML element to extract from the web page. You can target specific elements like h1, p, a, etc. For example, if you want to extract all paragraph tags, you would use -e p.
+
+`-l, --limit int`: Sets the maximum number of pages to scrape. If you want to limit the scraping to a certain number of pages, specify this flag. For instance, -l 5 would scrape only the first five pages.
+
+`-o, --output string`: Defines the file path where the scraped data will be saved. This is important if you want to store the results for later use. Example: -o output.txt.
+
+`-p, --pagination string`: CSS selector for pagination links, allowing the scraper to navigate through multiple pages automatically. Use this if the website has a "Next" button or similar pagination control. For example, -p ".next-page".
+
+## Key Features
+
+- **Web Scraping:** Extracts content from web pages based on specified HTML elements.
+
+- **Customizable Output:** Allows you to save the scraped data to a file for further processing.
+
+- **Pagination Support:** Automatically navigates through multiple pages using pagination links.
+
+## Example
+
+```bash
+genie scrape -e h1 -o headings.txt https://example.com
+```
+
+This command scrapes all the h1 elements from the specified URL and saves them to a file named headings.txt. You can customize the element, output file, and other parameters based on your requirements.

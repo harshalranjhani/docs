@@ -55,10 +55,12 @@
         "commands/summarize",
         "commands/document",
         "commands/chat",
+        "commands/scrape",
         "commands/engine",
         "commands/switch",
         "commands/support",
-        "commands/verify"
+        "commands/verify",
+        "commands/reset"
       ]
     }
   ],
