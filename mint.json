@@ -18,7 +18,7 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:genie@harshalranjhani.in"
     }
   ],
   "topbarCtaButton": {
@@ -43,38 +43,31 @@
       "pages": [
         "introduction",
         "installation",
-        "getting-started"
+        "getting-started",
+        "model",
+        "supporter"
       ]
     },
     {
       "group": "Commands",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
-    },
-    {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "commands/do",
+        "commands/image",
+        "commands/music",
+        "commands/tell",
+        "commands/summarize",
+        "commands/document",
+        "commands/chat",
+        "commands/engine",
+        "commands/switch",
+        "commands/support",
+        "commands/verify"
       ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "x": "https://harshal.link/twitter",
+    "github": "https://harshal.link/github",
+    "linkedin": "https://harshal.link/linkedin"
   }
 }

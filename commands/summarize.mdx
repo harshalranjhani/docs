@@ -1,0 +1,56 @@
+---
+title: 'summarize'
+description: 'Reference for the `summarize` command in Genie, the AI-powered CLI companion.'
+---
+
+The `summarize` command automatically creates a markdown summary of comments within your project files. This is particularly useful for documenting code and reviewing key sections of your project.
+
+For this command to work, you need to have comments in your code that are marked as headings and subheadings. Genie will automatically detect these comments and generate a markdown summary based on them.
+
+Example of comments in code:
+
+In python:
+
+```python
+# genie:heading: This is a heading
+# genie:subheading: This is a subheading
+```
+
+or in javascript:
+
+```javascript
+// genie:heading: This is a heading
+// genie:subheading: This is a subheading
+```
+
+Make sure to match the exact format for the comments to be detected correctly. The format is `genie:heading:` for headings and `genie:subheading:` for subheadings. Remember to add a space after the colon and before the text. Also add a space after the comment marker (`#` or `//` or anything else) and before the `genie` keyword.
+
+This command can be used in relation to the [document](/commands/document) command to generate summaries of the codebase.
+
+## Usage
+
+```bash
+genie summarize
+```
+
+## Flags
+
+`--email`: Sends the generated markdown summary as a PDF via email.
+
+`--support`: Lists the supported languages for comment detection.
+
+`--filename`: Allows you to specify the filename for the generated markdown summary.
+
+## Key Features
+
+- **Automatic Comment Detection:** Scans your project files for comments marked as headings and subheadings and creates a structured summary.
+
+- **Multi-Language Support:** Recognizes comment markers across different programming languages.
+
+- **Email Integration:** Offers the ability to send the summary as a PDF via email.
+
+## Example
+
+```bash
+genie summarize --filename "ProjectSummary.md"
+```
