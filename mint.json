@@ -47,6 +47,7 @@
     {
       "group": "Commands",
       "pages": [
+        "commands/greet",
         "commands/do",
         "commands/image",
         "commands/music",
