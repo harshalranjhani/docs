@@ -1,0 +1,60 @@
+---
+title: 'Getting Started'
+description: 'Post-installation steps to get started with Genie.'
+---
+
+<Info>
+  **Prerequisite** You should have installed Python 3.6 or higher.
+</Info>
+
+## Initial setup
+
+I know you're excited to get started with Genie, but before you do, let's set up your environment. Make sure you have the following with you:
+
+1. OpenAI API Key 
+
+You can get your API key by signing up on the [OpenAI website](https://platform.openai.com/signup).
+
+2. Gemini API Key
+
+You can get your API key by signing up on the [Gemini website](https://docs.gemini.com/rest-api/).
+
+3. SSID
+
+The SSID is the `__Secure-1PSID` cookie value from the browser after logging into the Gemini website.
+
+4. Ignore List Path
+
+This is something which is very very important. Let's talk more about this below.
+5. Replicate API Key
+
+You can get your API key by signing up on the [Replicate website](https://replicate.ai/).
+
+## Ignore List Path
+
+When configuring the Genie CLI, you can specify ignore patterns to exclude certain files or directories from processing. This can be useful for skipping test files, build directories, or other irrelevant content.
+
+The ignore list is a file that contains a list of files and directories that you want to exclude from your project. This is highly important to reduce the token count and improve the performance of the analysis. Create an ignore list file anywhere on your system and store the path with you.
+
+This is a text file with the name ignorelist.txt that contains a list of files and directories to ignore. For example:
+
+```plaintext
+node_modules
+build
+dist
+*.log
+```
+
+## Configure Genie
+
+Now that you have all the necessary information, you can configure Genie by running the following command:
+
+```bash
+genie init
+```
+
+This command will prompt you to enter the API keys and other information required to set up Genie. Follow the instructions on the screen to complete the configuration.
+
+That's it! 🎉 You're all set to start using Genie. If you have any questions or need help, feel free to reach out to me at [genie@harshalranjhani.in](mailto:genie@harshalranjhani.in)
+
+

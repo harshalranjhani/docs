@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Genie",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
@@ -22,43 +22,32 @@
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Explore",
+    "url": "https://genie.harshalranjhani.in"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "name": "Author",
+      "icon": "user",
+      "url": "https://harshalranjhani.in"
     },
     {
       "name": "Blog",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://harshalranjhani.in/blog"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Get Started with Genie",
       "pages": [
         "introduction",
-        "quickstart",
-        "development"
+        "installation",
+        "getting-started"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Commands",
       "pages": [
         "essentials/markdown",
         "essentials/code",
