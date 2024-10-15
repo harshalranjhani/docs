@@ -1,0 +1,33 @@
+---
+title: 'readme'
+description: 'Reference for the `readme` command in Genie, the AI-powered CLI companion.'
+---
+
+The `readme` command will create a README file for your project. It will automatically generate a README file based on the structure of your project, including information about the project, installation instructions, usage examples, and more.
+
+There are three templates included with the `readme` command: `default`, `minimal`, and `detailed`. You can choose the template that best fits your project's needs.
+
+
+## Usage
+
+```bash
+genie readme --template "detailed" --filename "README.md"
+```
+
+## Flags
+
+`--template`: Specifies the template to be used for generating the README file. The available options are `default`, `minimal`, and `detailed`. This flag is optional and defaults to `default`.
+
+`--filename`: Specifies the name of the README file to be generated. This flag is optional and defaults to `README.md`.
+
+## Key Features
+
+- **Automatic README Generation:** Creates a README file based on the structure of your project.
+
+- **Template Selection:** Allows you to choose from different templates to customize the README file.
+
+## Example
+
+```bash
+genie readme --template "minimal" --filename "README.md"
+```

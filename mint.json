@@ -49,6 +49,7 @@
       "pages": [
         "commands/greet",
         "commands/do",
+        "commands/readme",
         "commands/image",
         "commands/music",
         "commands/tell",
