@@ -61,7 +61,9 @@
         "commands/switch",
         "commands/support",
         "commands/verify",
-        "commands/reset"
+        "commands/reset",
+        "commands/bug-report",
+        "commands/status"
       ]
     }
   ],

@@ -11,4 +11,35 @@ The `switch` command is used to change the underlying AI model used by Genie. Th
 genie switch
 ```
 
-There are no additional arguments required for this command. It will automatically alternate between available the `gemini-1.5-pro` and `gpt-4o-mini` models.
+## Flags
+
+`--list-models`: Lists all the available models that you can switch to for the current engine.
+
+`--model <model>`: Switches to the specified model.
+
+`--help`: Displays help information about the switch command and its usage.
+
+
+## Switching Engine 
+
+Currently the engines supported are **Gemini** and **GPT**. To switch between these run:
+
+```bash
+genie switch
+```
+
+and your engines will be switched with the default model configurations.
+
+## Switching models
+
+To switch models for a particular engine run:
+
+```bash
+genie switch --model <model-name>
+```
+
+You can find all the available models to switch to by running:
+
+```bash
+genie switch --list-models
+```

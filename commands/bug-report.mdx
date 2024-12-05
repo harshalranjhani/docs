@@ -1,0 +1,57 @@
+---
+title: 'bug report'
+description: 'Reference for the `bug report` command in Genie, the AI-powered CLI companion.'
+---
+
+The `bug report` command helps users save bug reports in the current repository. This command will generate a detailed bug report from your description of the bug. Genie will analyze the issue and generate a structured report with:
+- Steps to reproduce
+- Expected vs actual behavior
+- Potential fixes
+- Severity and category classification
+
+All the information is saved in a markdown file in the bugs directory categorized by priority order.
+
+## Flags
+
+`-p, --priority`: Sets the priority level of the bug report. Available options are:
+- `low`: Minor issues that can be addressed later
+- `medium`: Default priority for most bugs
+- `high`: Urgent issues requiring immediate attention
+
+`-s, --severity`: Indicates how severe the bug's impact is. Options include:
+- `low`: Minimal impact on functionality
+- `medium`: Default severity level
+- `high`: Significant impact on core features
+- `critical`: System-breaking issues
+
+`-c, --category`: Categorizes the type of bug. Common categories include:
+- `ui`: User interface issues
+- `backend`: Server-side or database problems
+- `security`: Security vulnerabilities
+- `performance`: Speed or resource usage issues
+- And other custom categories as needed
+
+`-a, --assignee`: Specifies the team member who should be assigned to investigate and fix the bug. Takes a username string as input.
+
+`-h, --help`: Displays help information about the bug report command and its usage.
+
+
+## Usage
+
+```bash
+genie bug report <description>
+```
+
+## Key Features
+
+- **Automatic Bug Report Generation:** Generates a detailed bug report based on your description.
+- **Categorization and Prioritization:** Helps in organizing and prioritizing bugs based on severity and category.
+- **Assignee Specification:** Allows you to assign the bug to a specific team member for investigation.
+
+## Example
+
+```bash
+genie bug report "Cart total not updating when items removed" -c frontend -a "john.doe" -p medium
+```
+
+This will generate a bug report in the bugs directory and will be named in a timestamped format.

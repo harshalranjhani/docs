@@ -1,0 +1,50 @@
+---
+title: 'status'
+description: 'Reference for the `status` command in Genie, the AI-powered CLI companion.'
+---
+
+The `status` command provides information about the current status of the Genie CLI. It shows information like the version, verified status, current engine being used, device information, and configuration keys set by the user.
+
+## Usage
+
+```bash
+genie status
+```
+
+There are no additional arguments required for this command.
+
+## Example
+
+This is what the output of the `status` command looks like:
+
+```bash
+🧞 Genie Status Dashboard
+──────────────────────────────────────────────────
+📌 Version: vx.x.x  
+💻 System: darwin
+⚙️  Engine: GPT
+
+🔐 Verification Status
+─────────────────────────
+📧 Status: ✓ Verified
+   Email: dev@harshalranjhani.in
+
+🔧 Configuration Status
+─────────────────────────
+🔑 OpenAI API: ✓ Configured
+   Key: sk-p...LsEA
+🔑 Gemini API: ✓ Configured
+   Key: AIza...RNWw
+🔑 Replicate API: ✓ Configured
+   Key: ********
+🔑 SSID: ✓ Configured
+   Key: ********
+📝 Ignore List: ✓ Configured
+   Path: filepath.txt
+
+💡 Tips
+──────────
+• Use genie init to update configuration
+• Use genie switch to switch engines
+• Use genie reset to reset configuration
+```
