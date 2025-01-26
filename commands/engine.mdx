@@ -3,7 +3,7 @@ title: 'engine'
 description: 'Reference for the `engine` command in Genie, the AI-powered CLI companion.'
 ---
 
-The `engine` command is used to list the current engine being used by Genie. It will print the current engine being used by Genie, which can be either `gemini-1.5-pro` or `gpt-4o-mini`.
+The `engine` command is used to list the current engine being used by Genie. It will print the current engine being used by Genie along with the information about the model being used.
 
 ## Usage
 
@@ -12,3 +12,25 @@ genie engine
 ```
 
 There are no additional arguments required for this command.
+
+## Example
+
+This is what the output of the `engine` command looks like:
+
+```bash
+🧞 Current Configuration
+──────────────────────────────────────────────────
+Engine:
+  • DeepSeek
+Current Model:
+  • deepseek-chat
+
+Available Models:
+  • deepseek-chat (current)
+  • deepseek-reasoner
+──────────────────────────────────────────────────
+Helpful Commands:
+• Switch engine: genie switch
+• List models:   genie switch --list-models
+• Change model:  genie switch --model <model-name>
+```
