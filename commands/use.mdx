@@ -1,0 +1,30 @@
+---
+title: 'use'
+description: 'Reference for the `use` command in Genie, the AI-powered CLI companion.'
+---
+
+The `use` command is used to instantly change the engine and the model for Genie. If you don't want to cycle through the models which is done by `genie switch`, you can use this command to instantly change the engine and the model.
+
+## Usage
+
+```bash
+genie use --engine <engine> --model <model>
+```
+
+## Flags
+
+`--engine <engine>`: The engine to use.
+
+`--model <model>`: The model to use.
+
+The available engines are **Gemini**, **GPT**, **DeepSeek** and **Ollama**. These are case insensitive and you can enter these in lowercase or uppercase.
+
+To list all available models for an engine, you can use the `genie switch --list-models` command. You can find more details about the switch command [here](/commands/switch).
+
+## Example
+
+```bash
+genie use --engine ollama --model llama3.2
+```
+
+This will change the engine to **Ollama** and the model to **llama3.2**.

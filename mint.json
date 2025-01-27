@@ -59,6 +59,7 @@
         "commands/scrape",
         "commands/engine",
         "commands/switch",
+        "commands/use",
         "commands/support",
         "commands/verify",
         "commands/reset",
